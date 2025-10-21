@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Portfolio — Your Name</title>
+        <meta name="description" content="Portfolio of Your Name — web developer, designer, and problem solver." />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="#">Your Name</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <nav id="site-nav" class="site-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container hero-inner">
+                    <div class="hero-copy">
+                        <h1>Hi, I'm Your Name</h1>
+                        <p class="lead">I build accessible, fast, and beautiful web experiences. I focus on front-end development, UI design, and performance.</p>
+                        <p>
+                            <a class="btn primary" href="#projects">See my work</a>
+                            <a class="btn" href="#contact">Get in touch</a>
+                        </p>
+                    </div>
+                    <div class="hero-photo" aria-hidden="true">
+                        <svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img">
+                            <rect width="240" height="240" rx="16" fill="#f3f4f6" />
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#9ca3af" font-family="Inter, system-ui, sans-serif" font-size="18">Your Photo</text>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section about">
+                <div class="container">
+                    <h2>About</h2>
+                    <p>I’m a web developer with a passion for building delightful, accessible user experiences. I enjoy working across the stack, with a focus on front-end tooling, performance, and design systems.</p>
+                </div>
+            </section>
+
+            <section id="projects" class="section projects">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="grid projects-grid">
+                        <article class="card">
+                            <h3>Project One</h3>
+                            <p class="muted">A short description of this project. Tech: HTML, CSS, JS</p>
+                            <p><a href="#" class="link">View project</a></p>
+                        </article>
+                        <article class="card">
+                            <h3>Project Two</h3>
+                            <p class="muted">A short description of this project. Tech: React, Node</p>
+                            <p><a href="#" class="link">View project</a></p>
+                        </article>
+                        <article class="card">
+                            <h3>Project Three</h3>
+                            <p class="muted">A short description of this project. Tech: Python, ML</p>
+                            <p><a href="#" class="link">View project</a></p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section skills">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <div class="skill-list">
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">TypeScript</span>
+                        <span class="skill">Node.js</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <p>If you'd like to work together or have a question, send a message.</p>
+                    <form id="contact-form" class="contact-form" action="#" novalidate>
+                        <label>
+                            <span>Name</span>
+                            <input type="text" name="name" required />
+                        </label>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" required />
+                        </label>
+                        <label>
+                            <span>Message</span>
+                            <textarea name="message" rows="4" required></textarea>
+                        </label>
+                        <p><button type="submit" class="btn primary">Send message</button></p>
+                        <p id="form-status" class="muted" aria-live="polite"></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>&copy; <span id="year"></span> Your Name. Built with ❤️.</p>
+                <p class="social">
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
